@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Vishesh Singhal | Portfolio</title>
+  <script src="https://kit.fontawesome.com/a2d9d6b3c6.js" crossorigin="anonymous"></script>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <style>
+    html {
+      scroll-behavior: smooth;
+    }
+
+    @keyframes fadeInUp {
+      from {
+        opacity: 0;
+        transform: translateY(40px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    @keyframes zoomIn {
+      from {
+        opacity: 0;
+        transform: scale(0.8);
+      }
+      to {
+        opacity: 1;
+        transform: scale(1);
+      }
+    }
+
+    .fade-in-up {
+      animation: fadeInUp 1s ease-out both;
+    }
+
+    .zoom-in {
+      animation: zoomIn 0.8s ease-out both;
+    }
+
+    .navbar-slide {
+      animation: fadeInUp 0.6s ease-out both;
+    }
+
+    .reveal {
+      opacity: 0;
+      transform: translateY(50px);
+      transition: all 1s ease;
+    }
+
+    .reveal.active {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  </style>
+</head>
+<body class="bg-gradient-to-b from-black to-blue-900 text-white">
+  <!-- Navbar -->
+  <header class="fixed w-full top-0 bg-black bg-opacity-50 backdrop-blur z-50 navbar-slide">
+    <div class="max-w-7xl mx-auto flex flex-wrap justify-between items-center p-4">
+      <div class="flex items-center space-x-4">
+        <a href="#hero" class="text-lg font-semibold hover:text-blue-300">Home</a>
+        <a class="text-2xl font-bold text-blue-400">Portfolio</a>
+      </div>
+      <nav class="flex flex-wrap gap-3 justify-end text-sm sm:text-base">
+        <a href="#about" class="hover:text-blue-300">About</a>
+        <a href="#experience" class="hover:text-blue-300">Experience</a>
+        <a href="#projects" class="hover:text-blue-300">Projects</a>
+        <a href="#skills" class="hover:text-blue-300">Skills</a>
+        <a href="#certifications" class="hover:text-blue-300">Certifications</a>
+        <a href="#contact" class="hover:text-blue-300">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="h-screen flex flex-col justify-center items-center text-center px-4" id="hero">
+    <img src="assets/profile.jpg" alt="Vishesh Singhal" class="w-40 h-40 rounded-full mx-auto mb-6 border-4 border-blue-500 shadow-xl zoom-in">
+    <h2 class="text-5xl font-bold mt-20 fade-in-up">Vishesh <span class="text-blue-500">Singhal</span></h2>
+    <p class="mt-4 max-w-xl text-lg text-gray-300 fade-in-up">Cyber security enthusiast and a pre-final year student at UPES, Dehradun.</p>
+    <div class="mt-6 space-x-4 fade-in-up">
+      
+      <a href="Vishesh Singhal _Resume.pdf" target="_blank" class="border border-blue-400 px-5 py-2 rounded hover:bg-blue-700">Download Resume</a>
+    </div>
+    <div class="flex space-x-6 mt-8 text-2xl text-gray-400 fade-in-up">
+      <a href="https://github.com/vsinghal04" target="_blank"><i class="fab fa-github hover:text-white transform transition duration-300 hover:rotate-6"></i></a>
+      <a href="https://linkedin.com/in/vishesh1308-" target="_blank"><i class="fab fa-linkedin hover:text-white transform transition duration-300 hover:rotate-6"></i></a>
+      <a href="mailto:singhalvishesh04@gmail.com"><i class="far fa-envelope hover:text-white transform transition duration-300 hover:rotate-6"></i></a>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="py-20 px-6 max-w-4xl mx-auto reveal">
+    <h3 class="text-3xl font-semibold mb-4 text-blue-400"><b>About Me</b></h3>
+    <br><br>
+    <p class="text-gray-300">I’m a <b>pre-final year student</b> at UPES, pursuing <b>B.Tech(Hons.)</b> in Computer Science Engineering with a core focus in <b>Cybersecurity and Forensics</b>. I have hands-on experience in manual testing, quality assurance, and IAM (Identity and Access Management).
+      <br><br>
+      I have led a team of <b>150+</b> students as the <b>Senior Mentor</b> for the <b>first year internship programme</b>, where I managed communications and partnerships. My role involved coordinating with the Career Services Department to ensure smooth execution.
+      I have also led the <b>National Service Scheme</b> (NSS) as the <b>Secretary</b>, where I organized various social initiatives and community service projects under <b>Student Experience and Engagement Team</b> at UPES.
+      <br><br>
+      I’m passionate about secure systems, and always open to connecting with people who share an interest in cybersecurity, QA, and secure app development.
+      <br><br>
+      I'm a <b>dynamic tech enthusiast</b> who blends development, leadership, and creativity. From building intelligent systems to leading teams, I craft digital solutions with clarity, code, and confidence.</p>
+  </section>
+
+
+  <!-- Experience Section -->
+  <section id="experience" class="py-20 px-6 max-w-4xl mx-auto reveal">
+    <h3 class="text-3xl font-semibold mb-6 text-blue-400"><b>Experience</b></h3>
+    <div class="space-y-6">
+      <div>
+        <h4 class="text-xl font-bold">Biz Digital IT Services Pvt. Ltd.</h4>
+        <p class="text-gray-400">Internship</p>
+        <p class="text-gray-400">Software Engineer, June-July 2025, Remote</p>
+        <ul class="list-disc list-inside text-gray-300 mt-2 space-y-1">
+        <li>Documented <b>50+</b> detailed manual test cases for user and role management modules in <b>HPC and Gen-AI based application</b>, increasing bug detection efficiency by <b>40%</b> during sprint QA cycles.</li>
+        <li>Built and optimized <b>RESTful APIs</b> using Flask and SQLAlchemy, supporting secure CRUD operations with role-based access control for user data.</li>
+        <li>Gained practical experience in <b>AWS</b> Cloud Services, including launching and managing <b>EC2 instances</b>, enhancing deployment and scalability understanding.</li>
+        </ul>
+      </div>
+
+      <div>
+        <h4 class="text-xl font-bold">Arushi India</h4>
+        <p class="text-gray-400">Srijan Social Internship</p>
+        <p class="text-gray-400">Social Work, June–July 2024, Bhopal, Madhya Pradesh</p>
+        <ul class="list-disc list-inside text-gray-300 mt-2 space-y-1">
+          <li>Led a team of <b>4</b> interns, coordinated activities, and ensured project targets were met on schedule.</li>
+          <li>Developed <b>5+</b> accessible audio files, benefiting visually impaired students in achieving their academic goals</li>
+          <li>Instructed <b>20+</b> disabled students in foundational subjects.</li>
+          <li>Assisted in occupational therapy sessions and gained a comprehensive understanding of disability rights and inclusive practices through hands-on experience.</li>
+        </ul>
+      </div>
+      <div>
+        <h4 class="text-xl font-bold">CollegeTips.in</h4>
+        <p class="text-gray-400">Internship</p>
+        <p class="text-gray-400">Content Writer, June 2024, Remote</p>
+        <ul class="list-disc list-inside text-gray-300 mt-2 space-y-1">
+        <li>Created <b>10+</b> compelling blog posts, engaging posters and social media content for the team.</li>
+        <li>Researched and wrote <b>3</b> articles on student life.</li>
+        <li>Collaborated with the marketing team to enhance online presence and reach a wider audience.</li>
+      </ul>
+      </div>
+    </div>
+  </section>
+   
+  <!--Projects Section-->
+  <section id="projects" class="py-20 px-6 max-w-4xl mx-auto reveal"></section>
+  <body class="bg-gradient-to-br from-gray-900 to-gray-800 text-white font-sans">
+  <section class="py-16 px-6 md:px-20">
+    <h3 class="text-3xl font-semibold mb-6 text-blue-400"><b>Projects</b></h3>
+    <div class="grid md:grid-cols-2 gap-8">
+      <!-- Project 1 -->
+      <div class="bg-gray-800 rounded-xl p-6 shadow-lg hover:shadow-2xl transition">
+        <h3 class="text-2xl font-semibold mb-2">Eco-Vyapaar</h3>
+        <span class="text-sm bg-blue-500 text-white rounded-full px-3 py-1 inline-block mb-3">Web Development</span>
+        <p class="text-gray-300 mb-3">India's street food scene is fire. But, sourcing is not. Eco-Vyapaar is a platform which will help vendors to get the best source of raw materials.</p>
+        <p class="text-blue-400 font-medium mb-4">Impact: <span class="font-bold text-white">This is a sustainable platform and also has a chatbot assistant to take you through.</span></p>
+        <div class="flex flex-wrap gap-2 mb-4">
+          <span class="bg-gray-700 px-3 py-1 rounded-full text-sm">ReactJS + TypeScript</span>
+          <span class="bg-gray-700 px-3 py-1 rounded-full text-sm">Tailwind CSS</span>
+          <span class="bg-gray-700 px-3 py-1 rounded-full text-sm">Shadcn UI</span>
+          <span class="bg-gray-700 px-3 py-1 rounded-full text-sm">Lucide Icons</span>
+          </div>
+        <div class="flex gap-4">
+          <a href="https://github.com/Sanya-09/Eco-Vyapaar-Project" class="flex items-center gap-1 text-blue-400 hover:underline">
+            <i class="ph ph-code"></i> Code
+          </a>
+          <a href="#" class="flex items-center gap-1 text-blue-400 hover:underline">
+            <i class="ph ph-globe"></i> Demo
+          </a>
+        </div>
+      </div>
+
+      <!-- Project 2 -->
+      <div class="bg-gray-800 rounded-xl p-6 shadow-lg hover:shadow-2xl transition">
+        <h3 class="text-2xl font-semibold mb-2">Password Strength Analyser</h3>
+        <span class="text-sm bg-blue-500 text-white rounded-full px-3 py-1 inline-block mb-3">Cybersecurity</span>
+        <p class="text-gray-300 mb-3">Built an interactive dashboard for real-time market trend analysis using Tableau. Integrated multiple data sources and automated reporting processes, reducing manual analysis time by 60%.</p>
+        <p class="text-blue-400 font-medium mb-4">Impact: <span class="font-bold text-white">60% reduction in analysis time</span></p>
+        <div class="flex flex-wrap gap-2 mb-4">
+          <span class="bg-gray-700 px-3 py-1 rounded-full text-sm">HTML</span>
+          <span class="bg-gray-700 px-3 py-1 rounded-full text-sm">CSS</span>
+          <span class="bg-gray-700 px-3 py-1 rounded-full text-sm">Regex</span>
+          <span class="bg-gray-700 px-3 py-1 rounded-full text-sm">Flask</span>
+        </div>
+        <div class="flex gap-4">
+          <a href="#" class="flex items-center gap-1 text-blue-400 hover:underline">
+            <i class="ph ph-code"></i> Code
+          </a>
+          <a href="#" class="flex items-center gap-1 text-blue-400 hover:underline">
+            <i class="ph ph-globe"></i> Demo
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+</body>
+ <body class="bg-gradient-to-br from-gray-900 to-gray-800 text-white font-sans">
+  <section class="py-16 px-6 md:px-20">
+    <div class="grid md:grid-cols-2 gap-8">
+      <!-- Project 3 -->
+      <div class="bg-gray-800 rounded-xl p-6 shadow-lg hover:shadow-2xl transition">
+        <h3 class="text-2xl font-semibold mb-2">Quiz Application</h3>
+        <span class="text-sm bg-blue-500 text-white rounded-full px-3 py-1 inline-block mb-3">Web Development</span>
+        <p class="text-gray-300 mb-3">A quiz application having role based access and strong authentication.</p>
+        <p class="text-blue-400 font-medium mb-4">Impact: <span class="font-bold text-white">28% increase in conversion rates</span></p>
+        <div class="flex flex-wrap gap-2 mb-4">
+          <span class="bg-gray-700 px-3 py-1 rounded-full text-sm">HTML</span>
+          <span class="bg-gray-700 px-3 py-1 rounded-full text-sm">CSS</span>
+          <span class="bg-gray-700 px-3 py-1 rounded-full text-sm">Python</span>
+          <span class="bg-gray-700 px-3 py-1 rounded-full text-sm">Flask WTF</span>
+          <span class="bg-gray-700 px-3 py-1 rounded-full text-sm">SQLAlchemy</span>
+        </div>
+        <div class="flex gap-4">
+          <a href="#" class="flex items-center gap-1 text-blue-400 hover:underline">
+            <i class="ph ph-code"></i> Code
+          </a>
+          <a href="#" class="flex items-center gap-1 text-blue-400 hover:underline">
+            <i class="ph ph-globe"></i> Demo
+          </a>
+        </div>
+      </div>
+
+      <!-- Project 4 -->
+      <div class="bg-gray-800 rounded-xl p-6 shadow-lg hover:shadow-2xl transition">
+        <h3 class="text-2xl font-semibold mb-2">Disaster Relief Management System</h3>
+        <span class="text-sm bg-blue-500 text-white rounded-full px-3 py-1 inline-block mb-3">Data Visualization</span>
+        <p class="text-gray-300 mb-3">Built an interactive dashboard for real-time market trend analysis using Tableau. Integrated multiple data sources and automated reporting processes, reducing manual analysis time by 60%.</p>
+        <p class="text-blue-400 font-medium mb-4">Impact: <span class="font-bold text-white">60% reduction in analysis time</span></p>
+        <div class="flex flex-wrap gap-2 mb-4">
+          <span class="bg-gray-700 px-3 py-1 rounded-full text-sm">Tableau</span>
+          <span class="bg-gray-700 px-3 py-1 rounded-full text-sm">SQL</span>
+          <span class="bg-gray-700 px-3 py-1 rounded-full text-sm">Python</span>
+          <span class="bg-gray-700 px-3 py-1 rounded-full text-sm">REST APIs</span>
+          <span class="bg-gray-700 px-3 py-1 rounded-full text-sm">Excel</span>
+        </div>
+        <div class="flex gap-4">
+          <a href="#" class="flex items-center gap-1 text-blue-400 hover:underline">
+            <i class="ph ph-code"></i> Code
+          </a>
+          <a href="#" class="flex items-center gap-1 text-blue-400 hover:underline">
+            <i class="ph ph-globe"></i> Demo
+          </a>
+        </div>
+      </div>
+    </div>
+    
+  </section>
+</body>
+  <!-- Skills Section -->
+  <section id="skills" class="py-20 px-6 max-w-4xl mx-auto reveal">
+    <h3 class="text-3xl font-semibold mb-6 text-blue-400"><b>Skills</b></h3>
+    <div class="grid grid-cols-2 md:grid-cols-4 gap-4 text-center text-black-400">
+      <div class="bg-gray-800 py-4 rounded-lg hover:bg-blue-800 hover:scale-105 hover:shadow-lg transition duration-300 transform hover:animate-pulse">C/C++</div>
+      <div class="bg-gray-800 py-4 rounded-lg hover:bg-blue-800 hover:scale-105 hover:shadow-lg transition duration-300 transform hover:animate-pulse">Java</div>
+      <div class="bg-gray-800 py-4 rounded-lg hover:bg-blue-800 hover:scale-105 hover:shadow-lg transition duration-300 transform hover:animate-pulse">Python</div>
+      <div class="bg-gray-800 py-4 rounded-lg hover:bg-blue-800 hover:scale-105 hover:shadow-lg transition duration-300 transform hover:animate-pulse">HTML</div>
+      <div class="bg-gray-800 py-4 rounded-lg hover:bg-blue-800 hover:scale-105 hover:shadow-lg transition duration-300 transform hover:animate-pulse">CSS</div>
+      <div class="bg-gray-800 py-4 rounded-lg hover:bg-blue-800 hover:scale-105 hover:shadow-lg transition duration-300 transform hover:animate-pulse">Flask</div>
+      <div class="bg-gray-800 py-4 rounded-lg hover:bg-blue-800 hover:scale-105 hover:shadow-lg transition duration-300 transform hover:animate-pulse">MS Office</div>
+      <div class="bg-gray-800 py-4 rounded-lg hover:bg-blue-800 hover:scale-105 hover:shadow-lg transition duration-300 transform hover:animate-pulse">Problem Solving</div>
+      <div class="bg-gray-800 py-4 rounded-lg hover:bg-blue-800 hover:scale-105 hover:shadow-lg transition duration-300 transform hover:animate-pulse">Leadership</div>
+      <div class="bg-gray-800 py-4 rounded-lg hover:bg-blue-800 hover:scale-105 hover:shadow-lg transition duration-300 transform hover:animate-pulse">Adaptive</div>
+      <div class="bg-gray-800 py-4 rounded-lg hover:bg-blue-800 hover:scale-105 hover:shadow-lg transition duration-300 transform hover:animate-pulse">Public Relations</div>
+      <div class="bg-gray-800 py-4 rounded-lg hover:bg-blue-800 hover:scale-105 hover:shadow-lg transition duration-300 transform hover:animate-pulse">Communication</div>
+    </div>
+  </section>
+
+   <!-- Certifications Section -->
+<section id="certifications" class="py-20 px-6 max-w-4xl mx-auto reveal">
+  <h3 class="text-3xl font-semibold mb-6 text-blue-400"><b>Certifications</b></h3>
+  <p class="text-xl font-semibold mb-2">Click and view them</p>
+  <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 text-center text-white">
+    <a href="https://www.credly.com/badges/78019e76-e7c2-4027-9c0a-f1d6745d1576/linked_in_profile" target="_blank" class="bg-gray-800 py-4 rounded-lg hover:bg-blue-800 hover:scale-105 hover:shadow-lg transition duration-300 transform hover:animate-pulse">
+      Introduction to Cybersecurity  
+    </a>
+    <a href=https://forage-uploads-prod.s3.amazonaws.com/completion-certificates/9PBTqmSxAf6zZTseP/E9pA6qsdbeyEkp3ti_9PBTqmSxAf6zZTseP_4ZY3oqZeDQzYYAyTX_1751453126272_completion_certificate.pdf" target="_blank" class="bg-gray-800 py-4 rounded-lg hover:bg-blue-800 hover:scale-105 hover:shadow-lg transition duration-300 transform hover:animate-pulse">
+      Cyber Job Simulation, Deloitte
+    </a>
+    <a href="https://www.linkedin.com/in/vishesh1308-/details/certifications/1752601840038/single-media-viewer?type=IMAGE&profileId=ACoAAEP7pFkBn-zv4qlIZ72xDDEK-UqXtPx7pA4&lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_certifications_details%3BxTD41NBtSlqY7NQqyKBv%2Bg%3D%3D" target="_blank" class="bg-gray-800 py-4 rounded-lg hover:bg-blue-800 hover:scale-105 hover:shadow-lg transition duration-300 transform hover:animate-pulse">
+      HackVega-Nationwide Hackathon
+    </a>
+    <a href="https://example.com/certificate4" target="_blank" class="bg-gray-800 py-4 rounded-lg hover:bg-blue-800 hover:scale-105 hover:shadow-lg transition duration-300 transform hover:animate-pulse">
+    Introduction to Generative AI
+    </a>
+    <a href="https://certificate.givemycertificate.com/c/808c9f72-aeea-407d-8c80-784d4a99c037" target="_blank" class="bg-gray-800 py-4 rounded-lg hover:bg-blue-800 hover:scale-105 hover:shadow-lg transition duration-300 transform hover:animate-pulse">
+    Hackathon, UPES CSA
+    </a>
+    <a href="https://www.coursera.org/account/accomplishments/certificate/YX7G8ESUA9QQ" target="_blank" class="bg-gray-800 py-4 rounded-lg hover:bg-blue-800 hover:scale-105 hover:shadow-lg transition duration-300 transform hover:animate-pulse">
+      Finding your Professional Voice
+    </a>
+    <a href="https://www.linkedin.com/posts/vishesh1308-_dear-connections-im-happy-to-share-that-activity-7083419075585916928-50xE?utm_source=share&utm_medium=member_desktop&rcm=ACoAAEP7pFkBn-zv4qlIZ72xDDEK-UqXtPx7pA4" target="_blank" class="bg-gray-800 py-4 rounded-lg hover:bg-blue-800 hover:scale-105 hover:shadow-lg transition duration-300 transform hover:animate-pulse">
+      TCS ION Communications Skills
+    </a>
+    <a href="https://www.linkedin.com/posts/vishesh1308-_mlsa-opportunity-learning-activity-7100824913552273408-9Zin?utm_source=share&utm_medium=member_desktop&rcm=ACoAAEP7pFkBn-zv4qlIZ72xDDEK-UqXtPx7pA4" target="_blank" class="bg-gray-800 py-4 rounded-lg hover:bg-blue-800 hover:scale-105 hover:shadow-lg transition duration-300 transform hover:animate-pulse">
+      Introduction to Azure
+    </a>
+    <a href="" target="_blank" class="bg-gray-800 py-4 rounded-lg hover:bg-blue-800 hover:scale-105 hover:shadow-lg transition duration-300 transform hover:animate-pulse">
+      Web Development Hackathon
+    </a>
+  </div>
+</section>
+
+  <!-- Contact Section with Image Logos -->
+<section id="contact" class="py-20 text-center bg-gradient-to-b from-black to-gray-900 text-white reveal">
+  <h2 class="text-4xl font-bold mb-6">Contact</h2>
+  <p class="mb-6">Let's connect! Reach me via:</p>
+
+  <div class="flex flex-col md:flex-row justify-center items-center gap-4">
+    
+    <a href="https://github.com/vsinghal04" target="_blank"
+       class="flex items-center gap-3 bg-gray-800 px-5 py-3 rounded-lg hover:bg-blue-600 transition">
+      <img src="assets/github-logo.png" alt="GitHub" class="w-6 h-6">
+      <span>GitHub</span>
+    </a>
+
+    <a href="https://linkedin.com/in/vishesh1308-" target="_blank"
+       class="flex items-center gap-3 bg-gray-800 px-5 py-3 rounded-lg hover:bg-blue-600 transition">
+      <img src="assets/linkedin-logo.png" alt="LinkedIn" class="w-6 h-6">
+      <span>LinkedIn</span>
+    </a>
+
+    <a href="mailto:singhalvishesh04@gmail.com"
+       class="flex items-center gap-3 bg-gray-800 px-5 py-3 rounded-lg hover:bg-blue-600 transition">
+      <img src="assets/gmail-logo.png" alt="Email" class="w-6 h-6">
+      <span>Email</span>
+    </a>
+
+  </div>
+</section>
+
+
+  </div>
+</section>
+  <!-- Footer -->
+  <footer class="py-6 text-center text-gray-500 text-sm bg-black">
+    @Built by Vishesh Singhal. All rights reserved.
+  </footer>
+
+  <script>
+    const reveals = document.querySelectorAll('.reveal');
+    window.addEventListener('scroll', () => {
+      for (let el of reveals) {
+        const windowHeight = window.innerHeight;
+        const revealTop = el.getBoundingClientRect().top;
+        const revealPoint = 100;
+        if (revealTop < windowHeight - revealPoint) {
+          el.classList.add('active');
+        }
+      }
+    });
+  </script>
+</body>
+</html>
